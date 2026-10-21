@@ -1,0 +1,166 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**********body***********/
+body {
+  background-color: #c5e5f6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/**********menu***********/
+
+header {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: -10px;
+  box-shadow: 0 10px 10px rgba(101, 48, 1, 0.207);
+  background: linear-gradient(to bottom, #b84b12, #ffba52);
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+@media (width < 700px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu li {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.menu a {
+  display: block;
+  padding: 5px 10px;
+  color: #6f0200;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu a:hover {
+  color: #15b499;
+}
+/**footer**/
+footer {
+  color: rgb(255, 222, 145);
+  background: linear-gradient(to bottom, #b84b12, #ffba52);
+  padding: 30px;
+}
+
+/****hero*****/
+.hero h1 {
+  text-align: center;
+  color: rgb(150, 30, 14);
+  font-family: BioRhyme Expanded;
+  font-size: 2.5rem;
+  padding: 15px;
+}
+.hero_1 p {
+  font-family: BioRhyme Expanded;
+  color: #400000;
+  text-align: center;
+}
+
+/********** KNAPPER **********/
+
+.button {
+  display: inline-block;
+  color: rgb(2, 67, 64);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 3px solid rgb(1, 1, 1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  text-align: center;
+  background-color: #c63936;
+}
+.button:hover {
+  background-color: #14a88f;
+}
+
+/*****grid********/
+
+.grid_2col,
+.guide_box {
+  background-image: url(./imgs/baggrund2.webp);
+  border: 3px solid #470303;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0px #5a0000;
+  padding: 30px;
+}
+
+section h2 {
+  font-family: "BioRhyme Expanded", serif;
+  color: #790c0a;
+  margin-bottom: 15px;
+  background-color: #15b499;
+}
+
+.begynder_guide h1 {
+  color: #790c0a;
+  margin-bottom: 15px;
+}
+
+.guide_box h3 {
+  font-family: "BioRhyme Expanded", serif;
+  color: #790c0a;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.symbolik h1 {
+  text-align: center;
+  color: #790c0a;
+  font-family: "BioRhyme Expanded", serif;
+  margin-bottom: 20px;
+}
+
+.symbolik_text h3 {
+  font-family: "BioRhyme Expanded", serif;
+  color: #790c0a;
+  margin-bottom: 10px;
+}
+
+.symbolik_text p {
+  color: #333;
+}
+/********** MOBIL MENU **********/
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav.active .menu {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
